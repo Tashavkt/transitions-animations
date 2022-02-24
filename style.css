@@ -1,0 +1,83 @@
+body {
+  background-color: rgba(216, 212, 255, 0.877);
+}
+
+.white-circle {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 50%;
+  position: relative;
+  left: 0;
+  right: 0;
+  -webkit-animation: circle 2s linear 0s infinite normal, alternate;
+          animation: circle 2s linear 0s infinite normal, alternate;
+}
+
+@-webkit-keyframes circle {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 500px;
+  }
+}
+
+@keyframes circle {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 500px;
+  }
+}
+
+.blue-box {
+  height: 120px;
+  width: 120px;
+  background-color: #61abff;
+  margin: 50px;
+  position: relative;
+  -webkit-animation: square 3s ease 0s infinite alternate-reverse, none;
+          animation: square 3s ease 0s infinite alternate-reverse, none;
+  -webkit-animation: name duration timing-function delay iteration-count direction fill-mode;
+          animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+@-webkit-keyframes square {
+  0% {
+    left: 50px;
+    top: 5px;
+  }
+  100% {
+    left: 500px;
+    top: 100px;
+  }
+}
+
+@keyframes square {
+  0% {
+    left: 50px;
+    top: 5px;
+  }
+  100% {
+    left: 500px;
+    top: 100px;
+  }
+}
+
+.button {
+  background-color: #fff99e;
+  display: inline-block;
+  width: 90px;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 10px;
+  border-radius: 20px;
+  -webkit-box-shadow: 5px 7px 0px #c0b9ff;
+          box-shadow: 5px 7px 0px #c0b9ff;
+  position: absolute;
+  top: 500px;
+  left: 600px;
+}
+/*# sourceMappingURL=style.css.map */
