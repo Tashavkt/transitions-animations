@@ -40,6 +40,11 @@ animation: name duration timing-function delay iteration-count direction fill-mo
         top: 100px;
     }
 }
+.blue-box:hover {
+    animation-play-state: paused;
+    transition: all 1s linear 0s;
+    background-color: aqua;
+}
 .button {
     background-color: rgb(255, 249, 158);
     display: inline-block;
