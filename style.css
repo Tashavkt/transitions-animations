@@ -10,13 +10,16 @@ body {
   position: relative;
   left: 0;
   right: 0;
-  -webkit-animation: circle 2s linear 0s infinite normal, alternate;
-          animation: circle 2s linear 0s infinite normal, alternate;
+  -webkit-animation: circle 2s linear 0s infinite alternate-reverse, none;
+          animation: circle 2s linear 0s infinite alternate-reverse, none;
 }
 
 @-webkit-keyframes circle {
   0% {
     left: 0;
+  }
+  50% {
+    border-radius: 0%;
   }
   100% {
     left: 500px;
@@ -26,6 +29,9 @@ body {
 @keyframes circle {
   0% {
     left: 0;
+  }
+  50% {
+    border-radius: 0%;
   }
   100% {
     left: 500px;
@@ -38,32 +44,74 @@ body {
   background-color: #61abff;
   margin: 50px;
   position: relative;
-  -webkit-animation: square 3s ease 0s infinite alternate-reverse, none;
-          animation: square 3s ease 0s infinite alternate-reverse, none;
-  -webkit-animation: name duration timing-function delay iteration-count direction fill-mode;
-          animation: name duration timing-function delay iteration-count direction fill-mode;
+  -webkit-animation: square 4s linear 0s infinite alternate-reverse, none;
+          animation: square 4s linear 0s infinite alternate-reverse, none;
 }
 
 @-webkit-keyframes square {
   0% {
-    left: 50px;
-    top: 5px;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    left: 100px;
+    top: 200px;
+    height: 60px;
+    width: 60px;
+  }
+  50% {
+    left: 200px;
+    top: 0px;
+    height: 120px;
+    width: 120px;
+  }
+  75% {
+    left: 300px;
+    top: 200px;
+    height: 60px;
+    width: 60px;
   }
   100% {
-    left: 500px;
-    top: 100px;
+    left: 400px;
+    top: 0px;
   }
 }
 
 @keyframes square {
   0% {
-    left: 50px;
-    top: 5px;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    left: 100px;
+    top: 200px;
+    height: 60px;
+    width: 60px;
+  }
+  50% {
+    left: 200px;
+    top: 0px;
+    height: 120px;
+    width: 120px;
+  }
+  75% {
+    left: 300px;
+    top: 200px;
+    height: 60px;
+    width: 60px;
   }
   100% {
-    left: 500px;
-    top: 100px;
+    left: 400px;
+    top: 0px;
   }
+}
+
+.blue-box:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  -webkit-transition: all 1s linear 0s;
+  transition: all 1s linear 0s;
+  background-color: aqua;
 }
 
 .button {
@@ -79,5 +127,49 @@ body {
   position: absolute;
   top: 500px;
   left: 600px;
+  -webkit-transition: all 0.5s linear 0s;
+  transition: all 0.5s linear 0s;
+}
+
+.button:hover {
+  -webkit-transition: all 1s linear 0s;
+  transition: all 1s linear 0s;
+  top: 504px;
+  -webkit-box-shadow: 1px 2px 0px #9549fa;
+          box-shadow: 1px 2px 0px #9549fa;
+  background-color: #fff785;
+}
+
+.button1 {
+  background-color: #fff;
+  width: 100px;
+  height: 50px;
+  display: inline-block;
+  top: 150px;
+  left: 0px;
+  -webkit-animation: knopka 1s linear 0 infinite linear, none;
+          animation: knopka 1s linear 0 infinite linear, none;
+}
+
+@-webkit-keyframes knopka {
+  0% {
+    top: 0px;
+    left: 0px;
+  }
+  100% {
+    top: 0px;
+    left: 450px;
+  }
+}
+
+@keyframes knopka {
+  0% {
+    top: 0px;
+    left: 0px;
+  }
+  100% {
+    top: 0px;
+    left: 450px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
