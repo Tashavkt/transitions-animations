@@ -1,3 +1,4 @@
+@import url(/null.css);
 body {
   background-color: rgba(216, 212, 255, 0.877);
 }
@@ -43,7 +44,7 @@ body {
   width: 120px;
   background-color: #61abff;
   margin: 50px;
-  position: relative;
+  position: absolute;
   -webkit-animation: square 4s linear 0s infinite alternate-reverse, none;
           animation: square 4s linear 0s infinite alternate-reverse, none;
 }
@@ -109,8 +110,8 @@ body {
 .blue-box:hover {
   -webkit-animation-play-state: paused;
           animation-play-state: paused;
-  -webkit-transition: all 1s linear 0s;
-  transition: all 1s linear 0s;
+  -webkit-transition: background-color 1s linear 0s;
+  transition: background-color 1s linear 0s;
   background-color: aqua;
 }
 
@@ -145,31 +146,30 @@ body {
   width: 100px;
   height: 50px;
   display: inline-block;
-  top: 150px;
+  top: 320px;
   left: 0px;
-  -webkit-animation: knopka 1s linear 0 infinite linear, none;
-          animation: knopka 1s linear 0 infinite linear, none;
+  position: absolute;
+  line-height: 45px;
+  padding-left: 15px;
+  -webkit-animation: but 1s ease-in-out 0s infinite alternate-reverse, normal;
+          animation: but 1s ease-in-out 0s infinite alternate-reverse, normal;
 }
 
-@-webkit-keyframes knopka {
+@-webkit-keyframes but {
   0% {
-    top: 0px;
     left: 0px;
   }
   100% {
-    top: 0px;
-    left: 450px;
+    left: 700px;
   }
 }
 
-@keyframes knopka {
+@keyframes but {
   0% {
-    top: 0px;
     left: 0px;
   }
   100% {
-    top: 0px;
-    left: 450px;
+    left: 700px;
   }
 }
 /*# sourceMappingURL=style.css.map */
