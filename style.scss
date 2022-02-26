@@ -1,3 +1,4 @@
+@import url(/null.css);
 body {
     background-color: rgba(216, 212, 255, 0.877);
 }
@@ -28,7 +29,7 @@ height: 120px;
 width: 120px;
 background-color: rgb(97, 171, 255);
 margin: 50px;
-position: relative;
+position: absolute;
 animation: square 4s linear 0s infinite alternate-reverse, none;
 }
 @keyframes square {
@@ -61,7 +62,7 @@ animation: square 4s linear 0s infinite alternate-reverse, none;
 }
 .blue-box:hover {
     animation-play-state: paused;
-    transition: all 1s linear 0s;
+    transition: background-color 1s linear 0s;
     background-color: aqua;
 }
 .button {
@@ -89,17 +90,19 @@ animation: square 4s linear 0s infinite alternate-reverse, none;
     width: 100px;
     height: 50px;
     display: inline-block;
-    top: 150px;
+    top: 320px;
     left: 0px;
-    animation: knopka 1s linear 0 infinite linear, none;
+    position: absolute;
+    line-height: 45px;
+    padding-left: 15px;
+    animation: but 1s ease-in-out 0s infinite alternate-reverse, normal;
 }
-@keyframes knopka {
-0% {
-    top: 0px;
-    left: 0px;
+@keyframes but {
+    0% {
+        left: 0px;
+    }
+    100% {
+        left: 700px;
+    }
 }
-100% {
-    top: 0px;
-    left: 450px;
-}
-}
+
